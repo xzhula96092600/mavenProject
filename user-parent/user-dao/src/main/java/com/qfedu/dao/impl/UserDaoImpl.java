@@ -9,6 +9,8 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
     @Override
     public List<User> findAll() {
+        User user = new User();
         return Arrays.asList(new User("xz", 23, "男"), new User("xzz", 23, "男"));
+
     }
 }
